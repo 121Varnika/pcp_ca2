@@ -43,22 +43,22 @@ const Stats = () => {
   if (loading) return <h2>Loading...</h2>;
 
   return (
-    <div>
-      <h1>Stats</h1>
+  <div>
+    <h1>Stats</h1>
 
-      <div data-testid="total-orders">
-        {stats.totalOrders}
-      </div>
-
-      <div data-testid="delivered-orders">
-        {stats.deliveredOrders}
-      </div>
-
-      <div data-testid="cancelled-orders">
-        {stats.cancelledOrders}
-      </div>
+    <div data-testid="total-orders">
+      Total Orders: {stats.totalOrders}
     </div>
-  );
+
+    <div data-testid="delivered-orders">
+      Delivered Orders: {stats.deliveredOrders}
+    </div>
+
+    <div data-testid="cancelled-orders">
+      Cancelled Orders: {stats.cancelledOrders}
+    </div>
+  </div>
+);
 };
 
 export default Stats;
